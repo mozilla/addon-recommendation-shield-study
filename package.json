@@ -1,0 +1,16 @@
+{
+  "title": "Add-on Recommendation",
+  "name": "addon-recommendation",
+  "version": "0.0.1",
+  "description": "Stand-alone add-on for recommending add-ons",
+  "main": "index.js",
+  "author": "Benton Case",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

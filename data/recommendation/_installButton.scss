@@ -1,0 +1,279 @@
+//taken from https://github.com/mozilla/addons-frontend/
+
+$focus-outline-color: #0096dc;
+$page-background: #fbfbfb;
+
+$primary-font-color: #000;
+$secondary-font-color: #6a6a6a;
+
+$header-copy-font-color: #414141;
+$header-border-color: #b1b1b1;
+
+$breakpoints: (
+  small: '(max-width: 719px)',
+  large: '(min-width: 720px)'
+);
+
+@mixin focus() {
+  border-color: $focus-outline-color;
+  box-shadow: 0 0 5px 0 $focus-outline-color;
+  outline: none;
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  } @else {
+    @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+      + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+$size: 26px;
+$borderSize: 1px;
+
+$transition: 0.3s;
+
+$switchHandleActive: #fff;
+$switchHandleInactive: transparentize($switchHandleActive, 0.75);
+$switchHandleGap: 1px;
+$switchHandleDisabledOpacity: 0.25;
+$switchToBackgroundRatio: 2.7;
+
+$switchStrokeOff: #858585;
+$switchStrokeOn: #00a920;
+$switchStrokeWidth: 1px;
+$switchHandleActivePosition: round(($size * $switchToBackgroundRatio) - ($size + $switchStrokeWidth));
+
+$switchBackgroundOn: #57bd35;
+$switchBackgroundOff: #919191;
+
+$uninstallStripeColor1: #b1b1b1;
+$uninstallStripeColor2: #d4d4d4;
+
+$installStripeColor1: #00a920;
+$installStripeColor2: #00c42e;
+
+@keyframes stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: $size $size/2;
+  }
+}
+
+@mixin stripes($color1, $color2) {
+  animation: stripes 0.5s linear infinite;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      $color1,
+      $color1 25%,
+      $color2 25%,
+      $color2 50%,
+      $color1 50%
+    );
+  background-size: $size/2 $size/2;
+  background-color: $switchBackgroundOn;
+}
+
+.switch {
+  position: relative;
+
+  input:focus + label {
+    @include focus();
+  }
+
+  input + label {
+    background: #919191;
+    border-radius: $size;
+    border: $switchStrokeWidth solid $switchStrokeOff;
+    cursor: pointer;
+    display: block;
+    height: $size + ($switchHandleGap * 2);
+    overflow: hidden;
+    position: relative;
+    width: round($size * $switchToBackgroundRatio);
+    transition: border-color 0.1s;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    // Switch background.
+    &::before {
+      border-radius: $size;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      transition: background-color $transition;
+    }
+
+    // Handle.
+    &::after {
+      background: $switchHandleActive;
+      border-radius: 50%;
+      bottom: $switchHandleGap;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+      transform: translateX($switchHandleGap);
+      top: $switchHandleGap;
+      transition: transform $transition, box-shadow $transition;
+      width: $size;
+      height: $size;
+      z-index: 3;
+
+      [dir=rtl] & {
+        transform: translateX(-$switchHandleGap);
+      }
+    }
+
+    &:hover::after {
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 0 0 $size/2 transparentize($switchHandleActive, 0.8);
+    }
+  }
+
+  &.uninstalling {
+    input + label::before {
+      @include stripes(
+        $uninstallStripeColor1,
+        $uninstallStripeColor2);
+      // Reverse the stripe direction without
+      // impacting the animation speed.
+      transform: scaleX(-1);
+    }
+
+    input + label {
+      &::after {
+        transform: translateX($switchHandleGap);
+
+        /* stylelint-disable max-nesting-depth */
+        [dir=rtl] & {
+          transform: translateX(-$switchHandleGap);
+        }
+        /* stylelint-enable */
+      }
+      &:hover::after {
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.downloading {
+    overflow: hidden;
+    position: relative;
+
+    input + label {
+      border: 1px solid $switchStrokeOff;
+      overflow: hidden;
+
+      &::after {
+        background: $switchHandleActive;
+        transform: translateX($switchHandleActivePosition);
+
+        /* stylelint-disable max-nesting-depth */
+        [dir=rtl] & {
+          transform: translateX(-$switchHandleActivePosition);
+        }
+        /* stylelint-enable */
+      }
+    }
+  }
+
+  &.installing {
+    input + label {
+      border-color: $switchStrokeOn;
+
+      &::before {
+        @include stripes(
+          $installStripeColor1,
+          $installStripeColor2);
+      }
+      &::after {
+        transform: translateX($switchHandleActivePosition);
+
+        /* stylelint-disable max-nesting-depth */
+        [dir=rtl] & {
+          transform: translateX(-$switchHandleActivePosition);
+        }
+        /* stylelint-enable */
+      }
+      &:hover::after {
+        box-shadow: none;
+      }
+    }
+  }
+
+  // Disabled State
+  input:disabled + label,
+  input:checked:disabled + label {
+    cursor: not-allowed;
+
+    &::after {
+      background: $switchHandleInactive;
+    }
+    &:hover::after {
+      box-shadow: none;
+    }
+  }
+
+  input:checked + label {
+    border-color: $switchStrokeOn;
+
+    &::before {
+      background: $switchBackgroundOn;
+    }
+
+    &::after {
+      transform: translateX($switchHandleActivePosition);
+
+      [dir=rtl] & {
+        transform: translateX(-$switchHandleActivePosition);
+      }
+    }
+  }
+
+  // When add-on status is enabled installed is implied.
+  &.enabled,
+  &.installed {
+    input + label::before {
+      background: $switchBackgroundOn url('tick.svg') no-repeat 35% 50%;
+
+      [dir=rtl] & {
+        background-position: 65% 50%;
+      }
+    }
+  }
+}
+
+.progress {
+  background: transparentize(#3ef827, 0.5);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  transition: transform $transition;
+  transform: translateX(-100%);
+
+  [dir=rtl] & {
+    transform: translateX(100%);
+  }
+}
+
+@for $i from 1 through 100 {
+  [data-download-progress="#{$i}"] .progress {
+    transform: translateX(#{percentage($i - 100) / 100});
+
+    [dir=rtl] & {
+      transform: translateX(#{percentage(100 - $i) / 100});
+    }
+  }
+}

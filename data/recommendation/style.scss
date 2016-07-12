@@ -1,0 +1,45 @@
+@import "installButton";
+
+body {
+  margin: 0;
+}
+
+.addon-box {
+  align-items: center;
+  border-bottom: darkgray solid 1px;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  width: 400px;
+  & > div {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h2, h3 {
+    font-weight: normal;
+    margin: auto;
+    width: 100%;
+  }
+  .image-box {
+    height: 100%;
+    width: 20%;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+  .inner-box-1 {
+    height: 100%;
+    width: 55%;
+  }
+  .inner-box-2 {
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    width: 20%;
+  }
+}
+.addon-box:last-child {
+  border-bottom: none;
+}
