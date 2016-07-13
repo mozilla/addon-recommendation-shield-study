@@ -1,5 +1,5 @@
 class Notify {
-  constructor() {
+  start() {
     self.port.on('data', recs => {
       this.recs = recs;
       this.clearAllRecommendations();
@@ -8,16 +8,15 @@ class Notify {
   }
 
   clearAllRecommendations() {
-    var recDiv = document.getElementById('recs');
-    while(recDiv.firstChild) {
+    const recDiv = document.getElementById('recs');
+    while (recDiv.firstChild) {
       recDiv.removeChild(recDiv.firstChild);
     }
   }
 
   addRecommendations(startIndex, endIndex) {
-    for(var i = startIndex; i < endIndex; i++) {
-      var box = this.createNewBox();
-      this.fillInValues(box, this.recs[i]);
+    for (let i = startIndex; i < endIndex; i++) {
+      this.createRecommendationBox(this.recs[i]);
     }
   }
 
@@ -25,9 +24,9 @@ class Notify {
     this.addRecommendations(0, this.recs.length);
   }
 
-  createNewBox() {
-    var templateDiv = document.getElementById('template-div');
-    var dupDiv = templateDiv.cloneNode(true);
+  createEmptyBox() {
+    const templateDiv = document.getElementById('template-div');
+    const dupDiv = templateDiv.cloneNode(true);
     dupDiv.removeAttribute('id');
     dupDiv.removeAttribute('hidden');
     dupDiv.className = 'addon-box';
@@ -35,16 +34,16 @@ class Notify {
     return dupDiv;
   }
 
-  //replace default inner-html values
-  fillInValues(div, data) {
+  createRecommendationBox(data) {
+    const div = this.createEmptyBox();
     div.querySelector('.name').innerHTML = data.name;
     div.querySelector('.description').innerHTML = data.description;
     div.querySelector('.image').setAttribute('src', data.imageURL);
-    var button = div.getElementsByTagName('label')[0];
+    const button = div.getElementsByTagName('label')[0];
     button.addEventListener('click', () => {
       this.handleInstallClick(button, data);
     });
-    if(data.isInstalled) {
+    if (data.isInstalled) {
       this.buttonShowInstalled(button);
     }
   }
@@ -54,13 +53,13 @@ class Notify {
   }
 
   buttonShowInstalled(button) {
-    var input = button.parentNode.getElementsByTagName('input')[0];
+    const input = button.parentNode.getElementsByTagName('input')[0];
     input.setAttribute('checked', 'checked');
     button.parentNode.setAttribute('class', 'switch installed');
   }
 
   buttonShowUninstalled(button) {
-    var input = button.parentNode.getElementsByTagName('input')[0];
+    const input = button.parentNode.getElementsByTagName('input')[0];
     input.removeAttribute('checked');
     button.parentNode.setAttribute('class', 'switch uninstalled');
   }
@@ -68,26 +67,26 @@ class Notify {
   requestInstallChange(command, button, data) {
     self.port.emit(command, data);
     this.buttonShowInstalling(button);
-    var successMessage = command + data.packageURL;
+    const successMessage = command + data.packageURL;
     self.port.on(successMessage, () => {
-      if(command === 'install') {
+      if (command === 'install') {
         this.buttonShowInstalled(button);
-        data.isInstalled = true;
-      }
-      else {
+        data.isInstalled = true; // eslint-disable-line no-param-reassign
+      } else {
         this.buttonShowUninstalled(button);
-        data.isInstalled = false;
+        data.isInstalled = false; // eslint-disable-line no-param-reassign
       }
     });
   }
 
   handleInstallClick(button, data) {
-    var command = 'install';
-    if(data.isInstalled) {
+    let command = 'install';
+    if (data.isInstalled) {
       command = 'uninstall';
     }
     this.requestInstallChange(command, button, data);
   }
 }
 
-new Notify();
+const notify = new Notify();
+notify.start();
