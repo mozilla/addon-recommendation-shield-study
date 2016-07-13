@@ -1,7 +1,7 @@
-+*
-+.*
-+!/data/**/*
-+!/lib/**/*
-+!/index.js
-+!/README.md
-+!/package.json
+*
+.*
+!/data/**/*
+!/lib/**/*
+!/index.js
+!/README.md
+!/package.json
