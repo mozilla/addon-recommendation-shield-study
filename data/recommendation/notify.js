@@ -1,9 +1,13 @@
 class Notify {
   start() {
+    this.onboarded = false;
     self.port.on('data', recs => {
       this.recs = recs;
       this.clearAllRecommendations();
       this.showAllRecommendations();
+    });
+    self.port.on('endOnboard', () => {
+      document.querySelector('#welcome').remove();
     });
   }
 
