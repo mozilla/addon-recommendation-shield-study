@@ -7,7 +7,7 @@ class Notify {
       this.showAllRecommendations();
     });
     self.port.on('endOnboard', () => {
-      document.querySelector('#welcome').remove();
+      document.getElementById('welcome').remove();
     });
   }
 
