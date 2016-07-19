@@ -2,7 +2,7 @@
   from {
     background-position: 0 0; }
   to {
-    background-position: 26px 13px; } }
+    background-position: 20px 10px; } }
 .switch {
   position: relative; }
   .switch input:focus + label {
@@ -11,21 +11,21 @@
     outline: none; }
   .switch input + label {
     background: #919191;
-    border-radius: 26px;
+    border-radius: 20px;
     border: 1px solid #858585;
     cursor: pointer;
     display: block;
-    height: 28px;
+    height: 22px;
     overflow: hidden;
     position: relative;
-    width: 70px;
+    width: 54px;
     transition: border-color 0.1s; }
     .switch input + label::before, .switch input + label::after {
       content: "";
       display: block;
       position: absolute; }
     .switch input + label::before {
-      border-radius: 26px;
+      border-radius: 20px;
       bottom: 0;
       left: 0;
       right: 0;
@@ -39,17 +39,17 @@
       transform: translateX(1px);
       top: 1px;
       transition: transform 0.3s, box-shadow 0.3s;
-      width: 26px;
-      height: 26px;
+      width: 20px;
+      height: 20px;
       z-index: 3; }
       [dir=rtl] .switch input + label::after {
         transform: translateX(-1px); }
     .switch input + label:hover::after {
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 0 0 13px rgba(255, 255, 255, 0.2); }
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 0 0 10px rgba(255, 255, 255, 0.2); }
   .switch.uninstalling input + label::before {
     animation: stripes 0.5s linear infinite;
     background-image: repeating-linear-gradient(45deg, #b1b1b1, #b1b1b1 25%, #d4d4d4 25%, #d4d4d4 50%, #b1b1b1 50%);
-    background-size: 13px 13px;
+    background-size: 10px 10px;
     background-color: #57bd35;
     transform: scaleX(-1); }
   .switch.uninstalling input + label::after {
@@ -68,24 +68,24 @@
       overflow: hidden; }
       .switch.downloading input + label::after {
         background: #fff;
-        transform: translateX(43px);
+        transform: translateX(33px);
         /* stylelint-disable max-nesting-depth */
         /* stylelint-enable */ }
         [dir=rtl] .switch.downloading input + label::after {
-          transform: translateX(-43px); }
+          transform: translateX(-33px); }
   .switch.installing input + label {
     border-color: #00a920; }
     .switch.installing input + label::before {
       animation: stripes 0.5s linear infinite;
       background-image: repeating-linear-gradient(45deg, #00a920, #00a920 25%, #00c42e 25%, #00c42e 50%, #00a920 50%);
-      background-size: 13px 13px;
+      background-size: 10px 10px;
       background-color: #57bd35; }
     .switch.installing input + label::after {
-      transform: translateX(43px);
+      transform: translateX(33px);
       /* stylelint-disable max-nesting-depth */
       /* stylelint-enable */ }
       [dir=rtl] .switch.installing input + label::after {
-        transform: translateX(-43px); }
+        transform: translateX(-33px); }
     .switch.installing input + label:hover::after {
       box-shadow: none; }
   .switch input:disabled + label,
@@ -102,9 +102,9 @@
     .switch input:checked + label::before {
       background: #57bd35; }
     .switch input:checked + label::after {
-      transform: translateX(43px); }
+      transform: translateX(33px); }
       [dir=rtl] .switch input:checked + label::after {
-        transform: translateX(-43px); }
+        transform: translateX(-33px); }
   .switch.enabled input + label::before, .switch.installed input + label::before {
     background: #57bd35 url("tick.svg") no-repeat 35% 50%; }
     [dir=rtl] .switch.enabled input + label::before, [dir=rtl] .switch.installed input + label::before {
@@ -629,12 +629,18 @@ body {
 .addon-box {
   align-items: center;
   border-bottom: darkgray solid 1px;
+  color: darkgray;
   display: flex;
   height: 100px;
   justify-content: space-around;
   width: 400px; }
+  .addon-box strong {
+    font-weight: normal;
+    color: black; }
   .addon-box > div {
-    align-content: center;
+    height: 40%;
+    align-content: space-between;
+    align-items: center;
     display: flex;
     flex-wrap: wrap; }
   .addon-box h2, .addon-box h3 {
@@ -642,18 +648,14 @@ body {
     margin: auto;
     width: 100%; }
   .addon-box .image-box {
-    height: 100%;
-    width: 20%; }
+    width: 10%; }
     .addon-box .image-box img {
       display: block;
       margin: auto; }
   .addon-box .inner-box-1 {
-    height: 100%;
-    width: 55%; }
+    width: 60%; }
   .addon-box .inner-box-2 {
-    align-items: center;
-    height: 100%;
-    margin: 0;
+    align-items: flex-start;
     width: 20%; }
 
 .addon-box:last-child {
