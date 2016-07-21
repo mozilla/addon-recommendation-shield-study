@@ -6,6 +6,9 @@ class Notify {
       this.clearAllRecommendations();
       this.showAllRecommendations();
     });
+    self.port.on('onboard', () => {
+      document.getElementById('welcome').removeAttribute('hidden');
+    });
     self.port.on('endOnboard', () => {
       document.getElementById('welcome').remove();
     });

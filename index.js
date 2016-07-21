@@ -8,7 +8,7 @@ const variationsMod = require('lib/variations');
 const forSetup = {
   name: 'Addon Recommendation Test', // unique for Telemetry
   choices: Object.keys(variationsMod.variations), // names of branches.
-  duration: 7,   // in days,
+  duration: 30,   // in days,
   surveyUrl: 'https://qsurvey.mozilla.com/s3/Shield-Study-Example-Survey',
 };
 
