@@ -1,19 +1,28 @@
-var main = require("../");
+const { before, after } = require('sdk/test/utils');
+const { Recommender } = require('../lib/Recommend.js');
 
-exports["test main"] = function(assert) {
-  assert.pass("Unit test running!");
+let recommender;
+
+exports['test main'] = (assert) => {
+  assert.pass('Unit test running!');
 };
 
-exports["test main async"] = function(assert, done) {
-  assert.pass("async Unit test running!");
+exports['test main async'] = (assert, done) => {
+  assert.pass('async Unit test running!');
   done();
 };
 
-exports["test dummy"] = function(assert, done) {
-  main.dummy("foo", function(text) {
-    assert.ok((text === "foo"), "Is the text actually 'foo'");
-    done();
-  });
+exports['test recommend createPanel'] = (assert) => {
+  assert.ok((recommender.panel.isShowing === false), 'Panel created!');
 };
 
-require("sdk/test").run(exports);
+require('sdk/test').run(exports);
+
+before(exports, () => {
+  recommender = new Recommender();
+});
+
+after(exports, () => {
+  recommender.destroy();
+  recommender = null;
+});
