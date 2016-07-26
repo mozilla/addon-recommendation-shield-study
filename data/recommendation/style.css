@@ -628,8 +628,9 @@ body {
 
 .addon-box {
   align-items: center;
-  border-bottom: darkgray solid 1px;
-  color: darkgray;
+  background: #FFFFFF;
+  border-bottom: #C2C2C2 solid 1px;
+  color: #C2C2C2;
   display: flex;
   height: 100px;
   justify-content: space-around;
@@ -673,10 +674,14 @@ footer {
   width: 100%; }
   footer div {
     align-items: center;
-    background: lightgray;
+    background: #F7F7F7;
+    border-top: #C2C2C2 solid 1px;
     display: flex;
     height: inherit;
     justify-content: center;
     width: 50%; }
   footer div:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #E6E6E6; }
+  footer div:first-child {
+    border-right: #C2C2C2 solid 1px; }
