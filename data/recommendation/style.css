@@ -651,6 +651,7 @@ body {
   .addon-box .image-box {
     width: 10%; }
     .addon-box .image-box img {
+      cursor: pointer;
       display: block;
       margin: auto; }
   .addon-box .inner-box-1 {

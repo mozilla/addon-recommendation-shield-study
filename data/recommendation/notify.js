@@ -1,6 +1,7 @@
 class Notify {
   start() {
     this.onboarded = false;
+    this.setFooter();
     self.port.on('data', recs => {
       this.recs = recs;
       this.clearAllRecommendations();
@@ -31,6 +32,11 @@ class Notify {
     this.addRecommendations(0, this.recs.length);
   }
 
+  setFooter() {
+    const moreButton = document.querySelector('#more-button');
+    moreButton.addEventListener('click', this.handleMoreAddonsClick.bind(this));
+  }
+
   createEmptyBox() {
     const templateDiv = document.getElementById('template-div');
     const dupDiv = templateDiv.cloneNode(true);
@@ -46,6 +52,9 @@ class Notify {
     div.querySelector('.name').innerHTML = data.name;
     div.querySelector('.description').innerHTML = data.description;
     div.querySelector('.image').setAttribute('src', data.imageURL);
+    div.querySelector('.image').addEventListener('click', () => {
+      this.handleMoreInfoClick(data);
+    });
     const button = div.getElementsByTagName('label')[0];
     button.addEventListener('click', () => {
       this.handleInstallClick(button, data);
@@ -92,6 +101,14 @@ class Notify {
       command = 'uninstall';
     }
     this.requestInstallChange(command, button, data);
+  }
+
+  handleMoreInfoClick(data) {
+    self.port.emit('info', data);
+  }
+
+  handleMoreAddonsClick() {
+    self.port.emit('moreAddons', this.recs[0]);
   }
 }
 

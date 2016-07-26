@@ -8,7 +8,9 @@
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/687/687221-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/wikipedia-peek/",
         "name": "Peek",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/wikipedia-peek/addon-687221-latest.xpi"
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/wikipedia-peek/addon-687221-latest.xpi",
+        "moreURL": "https://addons.mozilla.org/en-US/firefox/search/?q=wikipedia"
+
       }
     ]
   },
@@ -21,7 +23,8 @@
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/387/387429-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/",
         "name": "Reddit Enhancement Suite",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/reddit-enhancement-suite/addon-387429-latest.xpi"
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/reddit-enhancement-suite/addon-387429-latest.xpi",
+        "moreURL": "https://addons.mozilla.org/en-US/firefox/search/?q=reddit"
       },
       {
         "description": "Bundled extension of /r/toolbox mod tools",
@@ -29,7 +32,8 @@
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/453/453070-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/reddit-moderator-toolbox/",
         "name": "Moderator Toolbox",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/reddit-moderator-toolbox/addon-453070-latest.xpi"
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/reddit-moderator-toolbox/addon-453070-latest.xpi",
+        "moreURL": "https://addons.mozilla.org/en-US/firefox/search/?q=reddit"
       }
     ]
   },
@@ -42,7 +46,8 @@
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/683/683225-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/soundcloud-night-mode/",
         "name": "Night Mode",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/soundcloud-night-mode/addon-683225-latest.xpi"
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/soundcloud-night-mode/addon-683225-latest.xpi",
+        "moreURL": "https://addons.mozilla.org/en-US/firefox/search/?q=soundcloud"
       },
       {
         "description": "Control Soundcloud from your Toolbar",
@@ -50,7 +55,8 @@
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/708/708470-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/soundcloud-controls/",
         "name": "Toolbar Control",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/soundcloud-controls/addon-708470-latest.xpi"
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/soundcloud-controls/addon-708470-latest.xpi",
+        "moreURL": "https://addons.mozilla.org/en-US/firefox/search/?q=soundcloud"
       }
     ]
   }
