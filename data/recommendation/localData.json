@@ -3,20 +3,12 @@
     "domain": "reddit.com",
     "data": [
       {
-        "description": "Suite of Tools to Enhance Reddit",
+        "description": "Must-have enhancements for Reddit.",
         "id": "jid1-xUfzOsOFlzSOXg@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/387/387429-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/reddit-enhancement-suite/",
         "name": "Reddit Enhancement Suite",
         "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/reddit-enhancement-suite/addon-387429-latest.xpi"
-      },
-      {
-        "description": "Bundled extension of /r/toolbox mod tools",
-        "id": "yes@jetpack",
-        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/453/453070-64.png",
-        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/reddit-moderator-toolbox/",
-        "name": "Moderator Toolbox",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/reddit-moderator-toolbox/addon-453070-latest.xpi"
       }
     ]
   },
@@ -24,7 +16,7 @@
     "domain": "soundcloud.com",
     "data": [
       {
-        "description": "Control Soundcloud from your Toolbar",
+        "description": "Control Soundcloud from your toolbar.",
         "id": "jid1-hHwww2ffttmnbBi4d@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/708/708470-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/soundcloud-controls/",
@@ -37,7 +29,7 @@
     "domain": "twitch.tv",
     "data": [
       {
-        "description": "",
+        "description": "Get instant alerts and quickly browse Twitch streams.",
         "id": "jid1-PmBVeuWLfYr73g@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/607/607490-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/twitchfox/",
@@ -45,7 +37,7 @@
         "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/twitchfox/addon-607490-latest.xpi"
       },
       {
-        "description": "",
+        "description": "Track your favorite channels, even when you’re not on the Twitch website.",
         "id": "jid1-jwVSihNsgAw5jA@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/518/518894-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/twitch-now/",
@@ -58,7 +50,7 @@
     "domain": "rt.com",
     "data": [
       {
-        "description": "",
+        "description": "Get the latest RT News with a single click.",
         "id": "jid1-ReWlW1efOwaQJQ@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/459/459962-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/rt-news/",
@@ -71,7 +63,7 @@
     "domain": "youtube.com",
     "data": [
       {
-        "description": "",
+        "description": "Play all YouTube videos in high-def.",
         "id": "{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/328/328839-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/youtube-high-definition/",
@@ -84,7 +76,7 @@
     "domain": "weather.com",
     "data": [
       {
-        "description": "",
+        "description": "Get instant weather reports right from the browser.",
         "id": "jid1-w3xH9kJhd3KJUp@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/549/549766-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/weather-forecast-plus/",
@@ -97,7 +89,7 @@
     "domain": "facebook.com",
     "data": [
       {
-        "description": "",
+        "description": "Bring Messenger right into your browser for easy access anytime.",
         "id": "{249b4e45-4fb9-4f6b-9754-7c0c1e605d44}",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/412/412584-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-messenger/",
@@ -105,7 +97,7 @@
         "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/facebook-messenger/addon-412584-latest.xpi"
       },
       {
-        "description": "",
+        "description": "Prevent Facebook from tracking websites you visit.",
         "id": "jid0-dBgF7UkIiOsWqvBng4hYu@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/593/593930-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-disconnect/",
@@ -113,7 +105,7 @@
         "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/facebook-disconnect/addon-593930-latest.xpi"
       },
       {
-        "description": "",
+        "description": "Magnify Facebook pics for up-close views.",
         "id": "{7c6cdf7c-8ea8-4be7-ae5a-0b3effe14d66}",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/429/429680-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-photo-zoom/",
@@ -121,7 +113,7 @@
         "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/facebook-photo-zoom/addon-429680-latest.xpi"
       },
       {
-        "description": "",
+        "description": "Enjoy enhanced access to Facebook emoticons.",
         "id": "jid0-XZn6pYCdV3ANrfYigxlyyGDrxAM@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/454/454042-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-secret-emoticons/",
@@ -134,7 +126,7 @@
     "domain": "twitter.com",
     "data": [
       {
-        "description": "",
+        "description": "Access Twitter from your browser sidebar.",
         "id": "{12b6fdcd-4423-4276-82a3-73fdbff5f7e4}",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/423/423970-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/twitter-app/",
@@ -147,7 +139,7 @@
     "domain": "pinterest.com",
     "data": [
       {
-        "description": "",
+        "description": "Send images to your Pinterest page with just one click. ",
         "id": "{677a8f98-fd64-40b0-a883-b8c95d0cbf17}",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/428/428922-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/pinterest-pin-button/",
@@ -160,7 +152,7 @@
     "domain": "gmail.com",
     "data": [
       {
-        "description": "",
+        "description": "Get Gmail alerts, read, reply, delete, and more — right from the browser toolbar.",
         "id": "jid1-sqmEAwSoa3FZPc@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/521/521580-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/fastest-notifier-for-gmail/",
@@ -173,7 +165,7 @@
     "domain": "amazon.com",
     "data": [
       {
-        "description": "",
+        "description": "See price comparisons and manage your Amazon activity right from the toolbar.",
         "id": "abb@amazon.com",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/337/337359-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/amazon-browser-bar/",
