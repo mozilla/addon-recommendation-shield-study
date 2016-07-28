@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="126px" height="126px" viewBox="0 0 126 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>infoIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-1" stroke="#D1D0D2" stroke-width="10" cx="63" cy="63" r="58"></circle>
+        <text id="i" font-family="Helvetica-Bold, Helvetica" font-size="72" font-weight="bold" fill="#D1D0D2">
+            <tspan x="53" y="89">i</tspan>
+        </text>
+    </g>
+</svg>

@@ -13,6 +13,10 @@ body {
   height: 100px;
   justify-content: space-around;
   width: 400px;
+  a {
+    color: lightblue;
+    text-decoration: none;
+  }
   strong {
     font-weight: normal;
     color: black;
@@ -37,6 +41,13 @@ body {
       margin: auto;
     }
   }
+  .image-box-info {
+    width: 10%;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
   .inner-box-1 {
     width: 60%;
   }
@@ -44,9 +55,21 @@ body {
     align-items: flex-start;
     width: 20%;
   }
-}
-.addon-box:last-child {
-  border-bottom: none;
+  .inner-box-close-button {
+    align-items: flex-start;
+    justify-content: center;
+    width: 20%;
+    div {
+      font-size: 20px;
+      padding: 0 6px;
+      &:hover{
+        background: #C2C2C2;
+        color: white;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+    }
+  }
 }
 
 #welcome {
@@ -64,7 +87,6 @@ footer {
   div {
     align-items: center;
     background: #F7F7F7;
-    border-top: #C2C2C2 solid 1px;
     display: flex;
     height: inherit;
     justify-content: center;

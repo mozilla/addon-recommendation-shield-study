@@ -1,10 +1,11 @@
 class Notify {
   start() {
-    this.onboarded = false;
-    this.setFooter();
+    this.whyBoxShowing = false;
+    this.setupFooter();
     self.port.on('data', recs => {
       this.recs = recs;
       this.clearAllRecommendations();
+      this.hideWhyBox();
       this.showAllRecommendations();
     });
     self.port.on('onboard', () => {
@@ -32,9 +33,20 @@ class Notify {
     this.addRecommendations(0, this.recs.length);
   }
 
-  setFooter() {
-    const moreButton = document.querySelector('#more-button');
-    moreButton.addEventListener('click', this.handleMoreAddonsClick.bind(this));
+  setupFooter() {
+    // const disableForSiteButton = document.querySelector('#disable-button');
+    const whyButton = document.querySelector('#why-button');
+    whyButton.addEventListener('click', this.handleWhyClick.bind(this));
+    const closeWhyButton = document.querySelector('#close-why-button');
+    closeWhyButton.addEventListener('click', this.closeWhyBox.bind(this));
+    const disableSiteButton = document.querySelector('#disable-site-button');
+    disableSiteButton.addEventListener('click', () => {
+      self.port.emit('disableSite');
+    });
+    const disableForeverButton = document.querySelector('#disable-forever-button');
+    disableForeverButton.addEventListener('click', () => {
+      self.port.emit('disableForever');
+    });
   }
 
   createEmptyBox() {
@@ -107,8 +119,40 @@ class Notify {
     self.port.emit('info', data);
   }
 
-  handleMoreAddonsClick() {
-    self.port.emit('moreAddons', this.recs[0]);
+  handleWhyClick() {
+    if (this.whyBoxShowing) {
+      this.closeWhyBox();
+    } else {
+      this.showWhyBox();
+    }
+  }
+
+  showWhyBox() {
+    this.whyBoxShowing = true;
+    const lastRec = document.querySelector('.addon-box:last-child');
+    lastRec.className = 'hiddenRec';
+    lastRec.setAttribute('hidden', 'true');
+    const whyBox = document.querySelector('#why-box');
+    whyBox.removeAttribute('hidden');
+    whyBox.className = 'addon-box';
+    const whyButton = document.querySelector('#why-button');
+    whyButton.style.background = '#E6E6E6';
+  }
+
+  closeWhyBox() {
+    this.hideWhyBox();
+    const lastRec = document.querySelector('.hiddenRec');
+    lastRec.className = 'addon-box';
+    lastRec.removeAttribute('hidden');
+  }
+
+  hideWhyBox() {
+    this.whyBoxShowing = false;
+    const whyBox = document.querySelector('#why-box');
+    whyBox.setAttribute('hidden', 'true');
+    whyBox.className = '';
+    const whyButton = document.querySelector('#why-button');
+    whyButton.style.background = '#F7F7F7';
   }
 }
 

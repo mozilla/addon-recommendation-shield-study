@@ -635,6 +635,9 @@ body {
   height: 100px;
   justify-content: space-around;
   width: 400px; }
+  .addon-box a {
+    color: lightblue;
+    text-decoration: none; }
   .addon-box strong {
     font-weight: normal;
     color: black; }
@@ -654,14 +657,28 @@ body {
       cursor: pointer;
       display: block;
       margin: auto; }
+  .addon-box .image-box-info {
+    width: 10%; }
+    .addon-box .image-box-info img {
+      display: block;
+      margin: auto; }
   .addon-box .inner-box-1 {
     width: 60%; }
   .addon-box .inner-box-2 {
     align-items: flex-start;
     width: 20%; }
-
-.addon-box:last-child {
-  border-bottom: none; }
+  .addon-box .inner-box-close-button {
+    align-items: flex-start;
+    justify-content: center;
+    width: 20%; }
+    .addon-box .inner-box-close-button div {
+      font-size: 20px;
+      padding: 0 6px; }
+      .addon-box .inner-box-close-button div:hover {
+        background: #C2C2C2;
+        color: white;
+        cursor: pointer;
+        border-radius: 15px; }
 
 #welcome {
   height: 40px;
@@ -676,7 +693,6 @@ footer {
   footer div {
     align-items: center;
     background: #F7F7F7;
-    border-top: #C2C2C2 solid 1px;
     display: flex;
     height: inherit;
     justify-content: center;
