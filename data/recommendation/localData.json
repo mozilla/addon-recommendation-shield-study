@@ -1,18 +1,5 @@
 [
   {
-    "domain": "wikipedia.org",
-    "data": [
-      {
-        "description": "See Previews of Linked Articles",
-        "id": "@wikipedia-peek",
-        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/687/687221-64.png",
-        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/wikipedia-peek/",
-        "name": "Peek",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/wikipedia-peek/addon-687221-latest.xpi"
-      }
-    ]
-  },
-  {
     "domain": "reddit.com",
     "data": [
       {
@@ -37,20 +24,161 @@
     "domain": "soundcloud.com",
     "data": [
       {
-        "description": "Dark Theme for SoundCloud",
-        "id": "@soundcloud_night_mode",
-        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/683/683225-64.png",
-        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/soundcloud-night-mode/",
-        "name": "Night Mode",
-        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/soundcloud-night-mode/addon-683225-latest.xpi"
-      },
-      {
         "description": "Control Soundcloud from your Toolbar",
         "id": "jid1-hHwww2ffttmnbBi4d@jetpack",
         "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/708/708470-64.png",
         "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/soundcloud-controls/",
         "name": "Toolbar Control",
         "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/soundcloud-controls/addon-708470-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "twitch.tv",
+    "data": [
+      {
+        "description": "",
+        "id": "jid1-PmBVeuWLfYr73g@jetpack",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/607/607490-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/twitchfox/",
+        "name": "Twitch Fox",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/twitchfox/addon-607490-latest.xpi"
+      },
+      {
+        "description": "",
+        "id": "jid1-jwVSihNsgAw5jA@jetpack",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/518/518894-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/twitch-now/",
+        "name": "Twitch Now",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/twitch-now/addon-518894-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "rt.com",
+    "data": [
+      {
+        "description": "",
+        "id": "jid1-ReWlW1efOwaQJQ@jetpack",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/459/459962-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/rt-news/",
+        "name": "RT News",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/rt-news/addon-459962-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "youtube.com",
+    "data": [
+      {
+        "description": "",
+        "id": "{7b1bf0b6-a1b9-42b0-b75d-252036438bdc}",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/328/328839-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/youtube-high-definition/",
+        "name": "YouTube High Definition",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/youtube-high-definition/addon-328839-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "weather.com",
+    "data": [
+      {
+        "description": "",
+        "id": "jid1-w3xH9kJhd3KJUp@jetpack",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/549/549766-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/weather-forecast-plus/",
+        "name": "Weather Underground",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/weather-forecast-plus/addon-549766-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "facebook.com",
+    "data": [
+      {
+        "description": "",
+        "id": "{249b4e45-4fb9-4f6b-9754-7c0c1e605d44}",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/412/412584-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-messenger/",
+        "name": "Facebook Messenger",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/facebook-messenger/addon-412584-latest.xpi"
+      },
+      {
+        "description": "",
+        "id": "jid0-dBgF7UkIiOsWqvBng4hYu@jetpack",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/593/593930-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-disconnect/",
+        "name": "Facebook Disconnect",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/facebook-disconnect/addon-593930-latest.xpi"
+      },
+      {
+        "description": "",
+        "id": "{7c6cdf7c-8ea8-4be7-ae5a-0b3effe14d66}",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/429/429680-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-photo-zoom/",
+        "name": "Facebook Photo Zoom",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/facebook-photo-zoom/addon-429680-latest.xpi"
+      },
+      {
+        "description": "",
+        "id": "jid0-XZn6pYCdV3ANrfYigxlyyGDrxAM@jetpack",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/454/454042-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/facebook-secret-emoticons/",
+        "name": "Emoticons for Facebook",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/facebook-secret-emoticons/addon-454042-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "twitter.com",
+    "data": [
+      {
+        "description": "",
+        "id": "{12b6fdcd-4423-4276-82a3-73fdbff5f7e4}",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/423/423970-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/twitter-app/",
+        "name": "Twitter App",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/twitter-app/addon-423970-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "pinterest.com",
+    "data": [
+      {
+        "description": "",
+        "id": "{677a8f98-fd64-40b0-a883-b8c95d0cbf17}",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/428/428922-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/pinterest-pin-button/",
+        "name": "Share Button",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/pinterest-pin-button/addon-428922-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "gmail.com",
+    "data": [
+      {
+        "description": "",
+        "id": "jid1-sqmEAwSoa3FZPc@jetpack",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/521/521580-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/fastest-notifier-for-gmail/",
+        "name": "Gmail Notifier",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/fastest-notifier-for-gmail/addon-521580-latest.xpi"
+      }
+    ]
+  },
+  {
+    "domain": "amazon.com",
+    "data": [
+      {
+        "description": "",
+        "id": "abb@amazon.com",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/337/337359-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/amazon-browser-bar/",
+        "name": "Amazon Assistant",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/amazon-browser-bar/addon-337359-latest.xpi"
       }
     ]
   }
