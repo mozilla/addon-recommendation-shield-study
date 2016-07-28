@@ -7,7 +7,7 @@ Stand-alone add-on for use in Shield studies.
 This will create `@addon-recommendation-0.0.1.xpi`, which you can install in Firefox.
 
 #To use
-With the add-on installed, navigate to any of the domains listed in 
+With the add-on installed, navigate to any of the domains listed in
 in `data/recommendation/localData.json`. Currently recommendations are provided
 on Reddit, Wikipedia, and SoundCloud.
 
@@ -17,3 +17,6 @@ By default the add-on will use a puzzle icon in the url bar to notify clients. T
 To change the text of the box (when `extensions.@addon-rec.useTextButton` is `true`), set the pref `extensions.@addon-rec.customButtonText` to the desired text. When this pref is not set, or is the empty string, the default text will be used.
 
 To change the icon (when `extensions.@addon-rec.useTextButton` is `false` or not set), change the pref `extensions.@addon-rec.customButtonImgURL` to the URL of the desired image. When this pref is not set, or the empty string, the default icon will be used.
+
+# License
+This add-on is licensed under the MPLv2. See the `LICENSE` file for details.
