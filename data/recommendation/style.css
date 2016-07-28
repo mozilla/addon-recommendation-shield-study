@@ -697,7 +697,8 @@ footer {
     height: inherit;
     justify-content: center;
     width: 50%; }
-  footer div:hover {
+  footer div:hover,
+  footer div.grayed {
     cursor: pointer;
     background: #E6E6E6; }
   footer div:first-child {

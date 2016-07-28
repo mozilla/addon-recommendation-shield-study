@@ -136,7 +136,7 @@ class Notify {
     whyBox.removeAttribute('hidden');
     whyBox.className = 'addon-box';
     const whyButton = document.querySelector('#why-button');
-    whyButton.style.background = '#E6E6E6';
+    whyButton.className = 'grayed';
   }
 
   closeWhyBox() {
@@ -152,7 +152,7 @@ class Notify {
     whyBox.setAttribute('hidden', 'true');
     whyBox.className = '';
     const whyButton = document.querySelector('#why-button');
-    whyButton.style.background = '#F7F7F7';
+    whyButton.className = '';
   }
 }
 
