@@ -2,6 +2,7 @@
 Stand-alone add-on for use in Shield studies.
 
 #To build
+`sass data/recommendation/style.scss data/recommendation/style.css --sourcemap=none`
 `$ jpm xpi`
 
 This will create `@addon-recommendation-0.0.1.xpi`, which you can install in Firefox.
