@@ -29,7 +29,6 @@ body {
     color: black;
     }
   & > div {
-    height: 40%;
     align-content: space-between;
     align-items: center;
     display: flex;
@@ -42,12 +41,10 @@ body {
     width: 100%;
   }
   .image-box {
-    align-items: center;
-    display: flex;
-    justify-content: center;
     width: 20%;
     img {
       cursor: pointer;
+      margin: auto;
     }
     .info-image {
       cursor: auto;
