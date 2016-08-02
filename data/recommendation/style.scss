@@ -42,18 +42,19 @@ body {
     width: 100%;
   }
   .image-box {
-    width: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
     img {
       cursor: pointer;
-      display: block;
-      margin: auto;
     }
   }
   .image-box-info {
-    width: 10%;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
     img {
-      display: block;
-      margin: auto;
+      width: 50%;
     }
   }
   .inner-box-1 {
