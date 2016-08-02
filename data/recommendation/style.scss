@@ -43,17 +43,14 @@ body {
   }
   .image-box {
     align-items: center;
+    display: flex;
     justify-content: center;
     width: 20%;
     img {
       cursor: pointer;
     }
-  }
-  .image-box-info {
-    align-items: center;
-    justify-content: center;
-    width: 20%;
-    img {
+    #info-image {
+      cursor: auto;
       width: 50%;
     }
   }
