@@ -35,8 +35,9 @@ body {
     display: flex;
     flex-wrap: wrap;
   }
-  p {
+  h1, p {
     font-weight: normal;
+    font-size: 1em;
     margin: auto;
     width: 100%;
   }
@@ -83,7 +84,7 @@ body {
   height: 65px;
   padding: 5px 10px 20px;
   margin: 0;
-  p {
+  h1 {
     font-weight: normal;
     margin: 0;
   }
