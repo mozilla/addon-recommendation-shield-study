@@ -6,16 +6,19 @@ body {
 
 .addon-box {
   align-items: center;
-  background: #FFFFFF;
+  background: #FFF;
   border-bottom: #C2C2C2 solid 1px;
-  color: #C2C2C2;
+  color: #555;
   display: flex;
   height: 100px;
   justify-content: space-around;
   width: 400px;
   a {
-    color: lightblue;
+    color: #0051a2;
     text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
   strong {
     font-weight: normal;
