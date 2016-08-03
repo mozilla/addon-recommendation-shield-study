@@ -1,5 +1,5 @@
 /* 1. the modules needed to turn this into a STUDY */
-const xutils = require('lib/shield-addon-utils');
+const xutils = require('shield-studies-addon-utils');
 const variationsMod = require('lib/variations');
 
 /* 2. configuration / setup constants for the study.
