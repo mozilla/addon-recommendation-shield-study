@@ -3,7 +3,7 @@ Stand-alone add-on for use in Shield studies.
 
 # To build
 ```bash
-$ npm build
+$ npm run build
 $ jpm xpi
 ```
 
