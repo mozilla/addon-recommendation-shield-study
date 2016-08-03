@@ -26,5 +26,8 @@
     "eslint-plugin-react": "^5.2.2",
     "node-sass": "^3.8.0"
   },
-  "repository": "https://github.com/mozilla/addon-recommendation-shield-study.git"
+  "repository": "https://github.com/mozilla/addon-recommendation-shield-study.git",
+  "dependencies": {
+    "shield-studies-addon-utils": "1.2.0"
+  }
 }
