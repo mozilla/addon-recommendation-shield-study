@@ -5,68 +5,61 @@
 }
 
 body {
+  background: #FFF;
   margin: 0;
+}
+
+a {
+  color: #0051a2;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+  font-size: 1em;
 }
 
 .addon-box {
   align-items: center;
-  background: #FFF;
   border-bottom: #C2C2C2 solid 1px;
   color: #555;
   display: flex;
   height: 100px;
-  justify-content: space-around;
+  padding: 20px 10px;
   width: 400px;
-  a {
-    color: #0051a2;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  strong {
-    font-weight: normal;
-    color: black;
-    }
   & > div {
-    height: 40%;
-    align-content: space-between;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-  }
-  h1, p {
-    font-weight: normal;
-    font-size: 1em;
-    margin: auto;
-    width: 100%;
-  }
-  .image-box {
-    width: 10%;
-    img {
-      cursor: pointer;
-      display: block;
-      margin: auto;
+    &:not(:last-child) {
+      margin-right: 10px;
     }
   }
-  .image-box-info {
-    width: 10%;
+  .image-box {
+    flex: 0 0 64px;
     img {
-      display: block;
+      cursor: pointer;
       margin: auto;
+    }
+    .info-image {
+      cursor: auto;
+      text-align: center;
+      width: 48px;
     }
   }
   .inner-box-1 {
-    width: 60%;
-  }
-  .inner-box-2 {
-    align-items: flex-start;
-    width: 20%;
+    overflow: hidden;
+    max-height: 75px;
+    h1, p {
+      margin: 0;
+      line-height: 15px;
+    }
   }
   .inner-box-close-button {
-    align-items: flex-start;
-    justify-content: center;
-    width: 20%;
     div {
       font-size: 20px;
       padding: 0 6px;
@@ -84,10 +77,6 @@ body {
   height: 65px;
   padding: 5px 10px 20px;
   margin: 0;
-  h1 {
-    font-weight: normal;
-    margin: 0;
-  }
 }
 
 footer {
@@ -98,9 +87,8 @@ footer {
     align-items: center;
     background: #F7F7F7;
     display: flex;
-    height: inherit;
+    flex-grow: 1;
     justify-content: center;
-    width: 50%;
   }
   div:hover,
   div.grayed {
