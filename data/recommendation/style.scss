@@ -74,9 +74,13 @@ h1 {
 }
 
 #welcome {
-  height: 65px;
-  padding: 5px 10px 20px;
+  align-items: center;
+  border-bottom: #C2C2C2 solid 1px;
+  display: flex;
+  height: 70px;
+  line-height: 15px;
   margin: 0;
+  padding: 10px;
 }
 
 footer {
