@@ -1,6 +1,6 @@
 {
   "title": "Site Enhance Shield Study",
-  "name": "Site-Enhance-Shield-Study",
+  "name": "site-enhance-shield-study",
   "version": "1.0.0",
   "description": "Shield Study add-on for recommending add-ons based on domain",
   "main": "index.js",
