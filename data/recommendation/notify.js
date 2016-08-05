@@ -124,6 +124,7 @@ class Notify {
       this.closeWhyBox();
     } else {
       this.showWhyBox();
+      self.port.emit('why');
     }
   }
 
