@@ -9,7 +9,7 @@ const forSetup = {
   name: 'Addon Recommendation Test', // unique for Telemetry
   choices: Object.keys(variationsMod.variations), // names of branches.
   duration: 14,   // in days,
-  surveyUrl: 'https://qsurvey.mozilla.com/s3/Shield-Study-Example-Survey',
+  surveyUrl: 'https://qsurvey.mozilla.com/s3/Site-Enhance-Shield-Study',
 };
 
 // 3. Study Object (module singleton);
