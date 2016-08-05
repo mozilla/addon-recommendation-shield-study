@@ -1,8 +1,8 @@
 {
-  "title": "Add-on Recommendation",
-  "name": "addon-recommendation",
-  "version": "0.0.6",
-  "description": "Stand-alone add-on for recommending add-ons",
+  "title": "Site Enhance Shield Study",
+  "name": "Site-Enhance-Shield-Study",
+  "version": "1.0.0",
+  "description": "Shield Study add-on for recommending add-ons based on domain",
   "main": "index.js",
   "author": "Benton Case <bcase@mozilla.com>",
   "engines": {
