@@ -1,5 +1,18 @@
 [
   {
+    "domain": "wikipedia.org",
+    "data": [
+      {
+        "description": "See previews of linked articles.",
+        "id": "@wikipedia-peek",
+        "imageURL": "https://addons.cdn.mozilla.net/user-media/addon_icons/687/687221-64.png",
+        "infoURL": "https://addons.mozilla.org/en-US/firefox/addon/wikipedia-peek/",
+        "name": "Wikipedia Peek",
+        "packageURL": "https://addons.mozilla.org/firefox/downloads/latest/wikipedia-peek/addon-687221-latest.xpi"
+      }
+    ]
+  },
+  {
     "domain": "reddit.com",
     "data": [
       {
