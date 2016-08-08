@@ -32,9 +32,6 @@ h1 {
   padding: 20px 10px;
   width: 400px;
   & > div {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
     &:not(:last-child) {
       margin-right: 10px;
     }
@@ -52,14 +49,19 @@ h1 {
     }
   }
   .inner-box-1 {
+    flex: 1 1;
     overflow: hidden;
     max-height: 75px;
     h1, p {
       margin: 0;
       line-height: 15px;
     }
+  .inner-box-2 {
+    flex: 0 0;
+  }
   }
   .inner-box-close-button {
+    flex: 0 0;
     div {
       font-size: 20px;
       padding: 0 6px;
