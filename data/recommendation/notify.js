@@ -9,7 +9,7 @@ class Notify {
       this.showAllRecommendations();
     });
     self.port.on('onboard', () => {
-      document.getElementById('welcome').removeAttribute('hidden');
+      document.getElementById('welcome').classList.remove('hidden');
     });
     self.port.on('endOnboard', () => {
       document.getElementById('welcome').remove();
@@ -53,8 +53,7 @@ class Notify {
     const templateDiv = document.getElementById('template-div');
     const dupDiv = templateDiv.cloneNode(true);
     dupDiv.removeAttribute('id');
-    dupDiv.removeAttribute('hidden');
-    dupDiv.className = 'addon-box';
+    dupDiv.classList.remove('hidden');
     document.getElementById('recs').appendChild(dupDiv);
     return dupDiv;
   }
@@ -131,29 +130,25 @@ class Notify {
   showWhyBox() {
     this.whyBoxShowing = true;
     const lastRec = document.querySelector('.addon-box:last-child');
-    lastRec.className = 'hiddenRec';
-    lastRec.setAttribute('hidden', 'true');
+    lastRec.classList.add('hidden');
     const whyBox = document.querySelector('#why-box');
-    whyBox.removeAttribute('hidden');
-    whyBox.className = 'addon-box';
+    whyBox.classList.remove('hidden');
     const whyButton = document.querySelector('#why-button');
-    whyButton.className = 'grayed';
+    whyButton.classList.add('grayed');
   }
 
   closeWhyBox() {
     this.hideWhyBox();
-    const lastRec = document.querySelector('.hiddenRec');
-    lastRec.className = 'addon-box';
-    lastRec.removeAttribute('hidden');
+    const lastRec = document.querySelector('.addon-box:last-child');
+    lastRec.classList.remove('hidden');
   }
 
   hideWhyBox() {
     this.whyBoxShowing = false;
     const whyBox = document.querySelector('#why-box');
-    whyBox.setAttribute('hidden', 'true');
-    whyBox.className = '';
+    whyBox.classList.add('hidden');
     const whyButton = document.querySelector('#why-button');
-    whyButton.className = '';
+    whyButton.classList.remove('grayed');
   }
 }
 
