@@ -23,7 +23,11 @@ h1 {
   font-size: 1em;
 }
 
-.addon-box {
+.addon-box,
+.why-box {
+  &.hidden {
+    display: none;
+  }
   align-items: center;
   border-bottom: #C2C2C2 solid 1px;
   color: #555;
@@ -75,7 +79,10 @@ h1 {
   }
 }
 
-#welcome {
+.welcome {
+  &.hidden {
+    display: none;
+  }
   align-items: center;
   border-bottom: #C2C2C2 solid 1px;
   display: flex;
