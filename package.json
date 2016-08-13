@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Shield Study add-on for recommending add-ons based on domain",
   "main": "index.js",
-  "author": "Mozilla",
+  "author": "Mozilla Foundation",
   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
