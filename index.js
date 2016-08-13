@@ -6,7 +6,7 @@ const variationsMod = require('lib/variations');
  *  These are only ones needed, or supported
  */
 const forSetup = {
-  name: 'Addon Recommendation Test', // unique for Telemetry
+  name: 'Site Enhance', // unique for Telemetry
   choices: Object.keys(variationsMod.variations), // names of branches.
   duration: 14,   // in days,
   surveyUrl: 'https://qsurvey.mozilla.com/s3/Site-Enhance-Shield-Study',
