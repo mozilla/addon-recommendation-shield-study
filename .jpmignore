@@ -1,7 +1,11 @@
 *
 .*
-!/data/**/*
-!/lib/**/*
+!/data/recommendation/*.svg
+!/data/recommendation/*.css
+!/data/recommendation/*.js
+!/data/recommendation/*.html
+!/data/recommendation/*.json
+!/lib/*.js
 !/index.js
 !/README.md
 !/package.json
