@@ -1,6 +1,6 @@
 [
   {
-    "domain": "wikipedia.org",
+    "domain": "www.wikipedia.org",
     "data": [
       {
         "description": "See previews of linked articles.",
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "domain": "reddit.com",
+    "domain": "www.reddit.com",
     "data": [
       {
         "description": "Must-have enhancements for Reddit.",
@@ -39,7 +39,7 @@
     ]
   },
   {
-    "domain": "twitch.tv",
+    "domain": "www.twitch.tv",
     "data": [
       {
         "description": "Get instant alerts and quickly browse Twitch streams.",
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "domain": "rt.com",
+    "domain": "www.rt.com",
     "data": [
       {
         "description": "Get the latest RT News with a single click.",
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "domain": "facebook.com",
+    "domain": "www.facebook.com",
     "data": [
       {
         "description": "Enjoy enhanced access to Facebook emoticons.",
@@ -86,7 +86,7 @@
     ]
   },
   {
-    "domain": "amazon.com",
+    "domain": "www.amazon.com",
     "data": [
       {
         "description": "See price comparisons and manage your Amazon activity right from the toolbar.",
