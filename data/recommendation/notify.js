@@ -60,8 +60,8 @@ class Notify {
 
   createRecommendationBox(data) {
     const div = this.createEmptyBox();
-    div.querySelector('.name').innerHTML = data.name;
-    div.querySelector('.description').innerHTML = data.description;
+    div.querySelector('.name').textContent = data.name;
+    div.querySelector('.description').textContent = data.description;
     div.querySelector('.image').setAttribute('src', data.imageURL);
     div.querySelector('.image').addEventListener('click', () => {
       this.handleMoreInfoClick(data);
