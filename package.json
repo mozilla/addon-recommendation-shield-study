@@ -14,7 +14,7 @@
     "jetpack"
   ],
   "scripts": {
-    "styles": "node-sass data/recommendation/style.scss data/recommendation/style.css --sourcemap=none",
+    "styles": "node-sass data/recommendation/style.scss data/recommendation/style.css --sourcemap=none && node-sass data/recommendation/buttonStyle.scss data/recommendation/buttonStyle.css --sourcemap=none",
     "build": "npm run styles && jpm xpi",
     "lint": "eslint lib data"
   },
