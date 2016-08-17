@@ -1,0 +1,14 @@
+.site-enhance-recommend-button {
+  background: #57bd35;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px -2px #6A6A6A;
+  color: white;
+  padding: 2px 2px 2px 8px;
+  &:hover,
+  &.site-enhance-panelopen {
+    background: #40a624;
+  }
+  image {
+    margin-left: 4px;
+  }
+}
