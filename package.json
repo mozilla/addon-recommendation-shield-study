@@ -1,7 +1,7 @@
 {
   "title": "Site Enhance Shield Study",
   "name": "site-enhance-shield-study",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Shield Study add-on for recommending add-ons based on domain",
   "main": "index.js",
   "author": "Mozilla Foundation",
@@ -16,16 +16,17 @@
   "scripts": {
     "styles": "node_modules/.bin/node-sass data/recommendation --output data/recommendation --sourcemap=none",
     "build": "npm run styles && jpm xpi",
-    "lint": "eslint lib data"
+    "lint": "eslint lib data",
+    "test": "jpm test"
   },
   "devDependencies": {
-    "jpm": "1.0.7",
     "eslint": "2.13.1",
     "eslint-config-airbnb": "9.0.1",
     "eslint-plugin-import": "1.10.2",
     "eslint-plugin-jsx-a11y": "1.5.5",
     "eslint-plugin-mozilla": "0.0.3",
     "eslint-plugin-react": "5.2.2",
+    "jpm": "1.1.4",
     "node-sass": "3.8.0",
     "woodchipper": "0.9.1"
   },
